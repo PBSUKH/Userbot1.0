@@ -1,0 +1,5 @@
+flask
+gunicorn
+aiohttp
+pyrogram
+tgcrypto
