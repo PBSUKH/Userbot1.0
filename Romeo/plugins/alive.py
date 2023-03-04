@@ -34,7 +34,7 @@ async def pingme(client: Client, message: Message):
     uptime = time() - start
     await message.delete()
     await r.edit(
-        f"**❂ 🇵𝐎𝐍𝐆 ❂**\n\n"
-        f"**🇺𝐏★🇹𝐈𝐌𝐄 ❥︎** {uptime * 1000:.3f}ᴍs\n"
-        f"**🇴𝐖𝐍𝐄𝐑 ❥︎** {client.me.mention}"
+        f"❂ 🇵𝐎𝐍𝐆 ❂\n\n"
+        f"🇺𝐏★🇹𝐈𝐌𝐄 ❥︎ {uptime * 1000:.3f}ᴍs\n"
+        f"🇴𝐖𝐍𝐄𝐑 ❥︎ {client.me.mention}"
     )
