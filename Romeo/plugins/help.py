@@ -10,12 +10,20 @@ from config import *
 async def help(client: Client, message: Message):
     await message.reply_text("wait..")
     CD = """
-`.ping` - chek bot alive or not
+`alive` - chek bot alive or not
+
+`.ping` - chek bot ping
+
 `.spam` - .spam (count) (message)
+
 `.sspam` - .sspam (count) (reply massage)
+
 `.delayspam` - .delayspam (time in second) (count) (text)
-`.uff` - reply any documents 
+
+`.uff` - reply any documents
+
 `.help` - To get commands
+
 `.restart` - restart the bot
 """
     await message.delete()
