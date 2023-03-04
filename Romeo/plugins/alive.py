@@ -10,7 +10,6 @@ from config import*
     filters.command(["alive"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def help(client: Client, message: Message):
-    await message.reply_text("**wait..**")
     start = time()
     current_time = datetime.utcnow()
     uptime = time() - start
