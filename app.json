@@ -25,11 +25,6 @@
             "description": "fill with the telethon session string from @RJssgBot",
             "required": false
         },
-        "MONGO_URL": {
-            "description": "Fill there an mongo database from mongodb.com",
-            "required": true,
-            "value": ""
-        },
         "SUDO_USERS": {
             "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
             "required": true,
@@ -41,11 +36,6 @@
             "value": "5368154755"
         },
         "LOG_GROUP": {
-            "description": "Fill there your group I'd go to create a group and add make an admin with @MissRose_bot to your group and type /id",
-            "required": false,
-            "value": ""
-        },
-        "PM_LOGGER": {
             "description": "Fill there your group I'd go to create a group and add make an admin with @MissRose_bot to your group and type /id",
             "required": false,
             "value": ""
