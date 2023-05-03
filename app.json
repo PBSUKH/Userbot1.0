@@ -2,7 +2,7 @@
     "name": "Romeo-Userbot",
     "description": "An first Telegram Userbot with multi Clients for Spamming or Mass.",
     "keywords": ["pyrogram", "userbot"],
-    "repository": "https://github.com/Romeo-RJ-143/spamrj",
+    "repository": "https://github.com/Romeo-RJ-143/cloner",
   "stack": "container",
     "env": {
         "STRING_SESSION1": {
