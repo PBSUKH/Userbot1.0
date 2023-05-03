@@ -8,7 +8,7 @@ LOG_GROUP = getenv("LOG_GROUP", "")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5392070730").split()))
 
 ALIVE_PIC = getenv("ALIVE_PIC", "https://telegra.ph/file/a62b9c7d9848afde0569e.jpg")
-REPO_URL = getenv("REPO_URL", "https://github.com/Romeo-RJ/spamrj")
+REPO_URL = getenv("REPO_URL", "https://github.com/Romeo-RJ/cloner")
 BRANCH = getenv("BRANCH", "main")
 
 
