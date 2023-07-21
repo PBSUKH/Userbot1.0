@@ -2,4 +2,6 @@ flask
 gunicorn
 aiohttp
 pyrogram
+requests
+telegraph
 tgcrypto
