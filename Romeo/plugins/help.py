@@ -30,7 +30,10 @@ ________________________________
 `.cmoji` - .cmoji (emoji or text) (name)
 
            HANG
- `.hang` - .hang (integer) 
+ `.hang` - .hang (integer)       
+
+           INVITE
+ `.invitesall` - .invitesall @groupusername
 
            RAID 
 `.raid` - .raid (count) (username or reply_message)
@@ -42,7 +45,13 @@ ________________________________
            SPAM
 `.spam` - .spam (count) (message)
 `.sspam` - .sspam (count) (reply_media)
-`.delayspam` - .delayspam (time in second) (count) (text)           
+`.delayspam` - .delayspam (time in second) (count) (text)
+
+           TAGGER
+ `.all` - .all (message) - to start usertagger
+
+            TELEGRAPH
+`.tm` - .tm (reply to any media) - to create teligraph link                
 """
     await message.delete()
     await message.reply_photo(photo=ALIVE_PIC, caption=CD)
