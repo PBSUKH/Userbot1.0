@@ -2,7 +2,6 @@ from asyncio import sleep
 from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from cache.gm import *
 from Romeo import spam_chats
 
 def get_arg(message: Message):
