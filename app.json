@@ -44,6 +44,17 @@
             "description": "fill with your bot token get from @BotFather on telegram",
             "required": true,
             "value": ""
+        },
+        "API_ID": {
+            "description": "Fill there your API_ID",
+            "required": false,
+            "value": "13335263"
+        },
+        },
+        "API_HASH": {
+            "description": "Fill there your API_HASH",
+            "required": false,
+            "value": "16743e0ded6547061df2f1087fe354df" 
         }
 
     }
