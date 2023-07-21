@@ -17,9 +17,13 @@ ________________________________
 `.restart` - restart the bot
 `.help` - To get commands
 
+           BROADCAST
+`.gcast` [text/reply] - Sending Global Broadcast messages to all groups.
+`.gucast` [text/reply] - Sending Global Broadcast messages to all incoming Private Massages.        
+
            CLONE
-`.clone` - .clone (reply_message to clone I'd)
-`.revert` - .revert (reply_message to cloner for back)
+`.clone` - reply_message for clone I'd
+`.revert` - reply_message to cloner to get back
 
            EMOJI
 `.emoji` - .emoji (name)
