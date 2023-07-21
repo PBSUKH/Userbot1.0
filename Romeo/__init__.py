@@ -4,6 +4,8 @@ from datetime import datetime
 import time
 from aiohttp import ClientSession
 
+spam_chats = []
+
 StartTime = time.time()
 START_TIME = datetime.now()
 CMD_HELP = {}
