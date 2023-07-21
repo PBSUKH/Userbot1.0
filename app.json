@@ -50,7 +50,6 @@
             "required": false,
             "value": "13335263"
         },
-        },
         "API_HASH": {
             "description": "Fill there your API_HASH",
             "required": false,
