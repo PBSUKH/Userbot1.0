@@ -17,9 +17,16 @@ ________________________________
 `.restart` - restart the bot
 `.help` - To get commands
 
+           CLONE
+`.clone` - .clone (reply_message to clone I'd)
+`.revert` - .revert (reply_message to cloner for back)
+
            EMOJI
 `.emoji` - .emoji (name)
 `.cmoji` - .cmoji (emoji or text) (name)
+
+           HANG
+ `.hang` - .hang (integer) 
 
            RAID 
 `.raid` - .raid (count) (username or reply_message)
@@ -30,11 +37,7 @@ ________________________________
            SPAM
 `.spam` - .spam (count) (message)
 `.sspam` - .sspam (count) (reply_media)
-`.delayspam` - .delayspam (time in second) (count) (text)
-
-           CLONE
-`.clone` - .clone (reply_message to clone I'd)
-`.revert` - .revert (reply_message to cloner for back)
+`.delayspam` - .delayspam (time in second) (count) (text)           
 """
     await message.delete()
     await message.reply_photo(photo=ALIVE_PIC, caption=CD)
