@@ -33,6 +33,7 @@ ________________________________
 `.dmraid` - .dmraid (count) (username or reply_message)
 `.replyraid` - .replyraid (username or reply_message)
 `.lraid` - .lraid (count) (username or reply_message)
+`.dmlraid` - .dmlraid (count) (username or reply_message)
 
            SPAM
 `.spam` - .spam (count) (message)
