@@ -9,7 +9,7 @@ async def start_bot():
     print("LOG: Founded Bot token Booting..")
     for all_module in ALL_MODULES:
         importlib.import_module("Romeo.plugins" + all_module)
-        print(f"Successfully Imported {all_module} ✨")
+        print(f"Successfully Imported {all_module} 😭")
     for cli in clients:
         try:
             await cli.start()
