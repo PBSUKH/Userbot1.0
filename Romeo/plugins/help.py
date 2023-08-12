@@ -49,6 +49,7 @@ ________________________________
 
            TAGGER
  `.all` - .all (message) - to start usertagger
+`.cancel` - to stop tagger
 
             TELEGRAPH
 `.tm` - .tm (reply to any media) - to create teligraph link                
