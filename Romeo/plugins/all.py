@@ -2,11 +2,8 @@ from asyncio import sleep
 from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from cache.gm import *
 
-from Romeo.modules.help import add_command_help
-from Romeo import spam_chats
-
+spam_chats = []
 
 def get_arg(message: Message):
     msg = message.text
@@ -17,7 +14,7 @@ def get_arg(message: Message):
     return " ".join(split[1:])
 
 @Client.on_message(filters.command("all", ".") & filters.me)
-async def mentionall(client: Client, message: Message):
+async def all(client: Client, message: Message):
     chat_id = message.chat.id
     direp = message.reply_to_message
     args = get_arg(message)
