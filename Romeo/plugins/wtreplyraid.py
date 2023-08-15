@@ -31,7 +31,7 @@ def get_arg(message):
 
 #REPLYLOVERAID
 @Client.on_message(
-    filters.command(["rr", "replyraid"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["rjrr"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def rlr(client: Client, message: Message):
     r= await message.edit_text("**Processing**")
@@ -62,7 +62,7 @@ async def rlr(client: Client, message: Message):
 
 #DREPLYLOVERAID
 @Client.on_message(
-    filters.command(["drr", "dreplyraid"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["drjrr"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def drlr(client: Client, message: Message):
     r= await message.edit_text("**Processing**")
