@@ -3,6 +3,7 @@ from os import getenv
 API_ID = int(getenv("API_ID", "13335263"))
 API_HASH = getenv("API_HASH", "")
 BOT_TOKEN = getenv("BOT_TOKEN", "")
+MONGO_URL = getenv("MONGO_URL")
 OWNER_ID = int(getenv("OWNER_ID", ""))
 LOG_GROUP = getenv("LOG_GROUP", "")
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5392070730").split()))
