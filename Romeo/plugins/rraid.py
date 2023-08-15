@@ -129,7 +129,7 @@ async def replyraid(client: Client, message: Message):
   #      return
     await raid.edit("`Activating Replyraid....!`")
     await rraid(userz.id, reason)
-    ab = f"Reply Raid has Been Activated On {userz.first_name}"
+    ab = f"Reply Raid has Been Activated On [{userz.first_name}](tg://user?id={userz.id})"
     await raid.edit(ab)
 
 @Client.on_message(filters.command(["dreplyraid", "drraid", "drr"], ".") & (filters.private | filters.user(SUDO_USER)))
