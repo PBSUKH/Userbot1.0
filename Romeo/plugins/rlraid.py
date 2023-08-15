@@ -128,7 +128,7 @@ async def loveraid(client: Client, message: Message):
  #       return
     await m.edit("`Activating LoveRaid....!`")
     await rlove(userz.id, reason)
-    ab = f"LoveRaid has Been Activated On {userz.first_name}"
+    ab = f"LoveRaid has Been Activated On [{userz.first_name}](tg://user?id={userz.id})"
     await m.edit(ab)
     
 
