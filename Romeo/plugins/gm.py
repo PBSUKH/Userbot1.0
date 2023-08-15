@@ -1,9 +1,7 @@
 from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
-from cache.gm import *
-
-from Romeo.modules.help import add_command_help
+from Romeo.helper.gm import *
 from Romeo import spam_chats
 
 
