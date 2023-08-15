@@ -20,15 +20,6 @@ async def get_chats(client: Client):
         if dialog.chat.type in ["supergroup", "channel"]:
             chats.append(dialog.chat.id)
     return chats
-'''
-async def iter_chats(client: Client):
-    """Iter Your All Chats"""
-    chats = []
-    async for dialog in client.iter_dialogs():
-        if dialog.chat.type in ["supergroup", "channel"]:
-            chats.append(dialog.chat.id)
-    return chats
-'''
 
 def get_user(message: Message, text: str) -> [int, str, None]:
     """Get User From Message"""
