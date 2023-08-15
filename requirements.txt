@@ -1,6 +1,5 @@
-flask
-gunicorn
 aiohttp
+motor
 pyrogram
 requests
 telegraph
