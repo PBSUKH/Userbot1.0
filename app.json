@@ -25,6 +25,11 @@
             "description": "fill with the telethon session string from @RJssgBot",
             "required": false
         },
+        "MONGO_URL": {
+            "description": "Fill there an mongo database from mongodb.com",
+            "required": true,
+            "value": ""
+        },
         "SUDO_USERS": {
             "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
             "required": true,
