@@ -21,8 +21,10 @@ async def watch_raids(client: Client, message: Message):
     if not message.from_user:
         return
     user = message.from_user.id
-    raid = random.choice(RAID)
-    love = random.choice(LOVE)
+    userr = await client.get_users(message.from_user.id)
+    mention = f"[{userr.first_name}](tg://user?id={userr.id})"
+    raid = f"{mention} {random.choice(RAID)}"
+    love = f"{mention} {random.choice(LOVE)}"
     if int(user) in VERIFIED_USERS:
         return
     elif int(user) in SUDO_USER:
