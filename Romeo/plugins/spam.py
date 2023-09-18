@@ -45,9 +45,6 @@ async def delayspam(client: Client, message: Message):
         )
     delayspam = await extract_args(message)
     arr = delayspam.split()
-  #  if len(arr) < 3 or not arr[0].isdigit() or not arr[1].isdigit():
-  #      await message.reply_text("`Something seems missing / wrong.`")
-  #      return
     delay = float(arr[0])
     count = int(arr[1])
     spam_message = delayspam.replace(arr[0], "", 1)
