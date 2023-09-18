@@ -1,8 +1,7 @@
-flask
-gunicorn
 aiohttp
 motor
 pyrogram
+py-tgcalls==0.9.7
 requests
 telegraph
 tgcrypto
