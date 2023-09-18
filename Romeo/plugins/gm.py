@@ -3,9 +3,10 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from Romeo.helper.gm import *
 from Romeo import spam_chats
+from Romeo import SUDO_USER
 
 
-@Client.on_message(filters.command(["morning", "gm", "g"], [".", "?", "/"]) & filters.me)
+@Client.on_message(filters.command(["gmorning", "ggm", "gg"], [".", "?", "/"]) & (filters.me | filters.user(SUDO_USER)))
 async def gm(client: Client, message: Message):
     chat_id = message.chat.id
     reply = GGM
@@ -33,7 +34,7 @@ async def gm(client: Client, message: Message):
         pass
 
 
-@Client.on_message(filters.command(["smorning", "sgm", "sg"], [".", "?", "/"]) & filters.me)
+@Client.on_message(filters.command(["gsmorning", "sggm", "sgg"], [".", "?", "/"]) & (filters.me | filters.user(SUDO_USER)))
 async def sgm(client: Client, message: Message):
     chat_id = message.chat.id
     sreply = GGM
@@ -60,9 +61,7 @@ async def sgm(client: Client, message: Message):
     except:
         pass
         
-'''
-
-@Client.on_message(filters.command(["morning", "gm", "g"], [".", "?", "/"]) & filters.me)
+@Client.on_message(filters.command(["morning", "gm", "g"], [".", "?", "/"]) & (filters.me | filters.user(SUDO_USER)))
 async def gm(client: Client, message: Message):
     chat_id = message.chat.id
     reply = GM
@@ -89,7 +88,7 @@ async def gm(client: Client, message: Message):
         pass
 
 
-@Client.on_message(filters.command(["smorning", "sgm", "sg"], [".", "?", "/"]) & filters.me)
+@Client.on_message(filters.command(["smorning", "sgm", "sg"], [".", "?", "/"]) & (filters.me | filters.user(SUDO_USER)))
 async def gm(client: Client, message: Message):
     chat_id = message.chat.id
     reply = GM
@@ -115,4 +114,3 @@ async def gm(client: Client, message: Message):
     except:
         pass
         
-'''
