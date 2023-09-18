@@ -2,12 +2,13 @@ import os
 from pyrogram import *
 from pyrogram.types import *
 from Romeo.helper.basic import edit_or_reply, get_text, get_user
+from Romeo import SUDO_USER
 
 OWNER = os.environ.get("OWNER", None)
 BIO = os.environ.get("BIO", "RomeoBot User")
 
 
-@Client.on_message(filters.command("clone", ".") & filters.me)
+@Client.on_message(filters.command("clone", ".") & (filters.me | filters.user(SUDO_USER)))
 async def clone(client: Client, message: Message):
     text = get_text(message)
     op = await message.edit_text("`Cloning`")
@@ -31,7 +32,7 @@ async def clone(client: Client, message: Message):
     await message.edit(f"**From now I'm** __{f_name}__")
 
 
-@Client.on_message(filters.command("revert", ".") & filters.me)
+@Client.on_message(filters.command("revert", ".") & (filters.me | filters.user(SUDO_USER)))
 async def revert(client: Client, message: Message):
     await message.edit("`Reverting`")
     r_bio = BIO
