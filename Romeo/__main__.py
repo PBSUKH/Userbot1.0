@@ -1,7 +1,6 @@
 import asyncio
 import importlib
 from pyrogram import Client, idle
-from Romeo.plugins import ALL_MODULES
 from Romeo import client, app
 
 async def start_bot():
