@@ -5,6 +5,7 @@ from pyrogram.types import *
 import logging
 from pyrogram.errors import (ChatAdminRequired)
 from config import*
+from Romeo import SUDO_USER
 logging.basicConfig(level=logging.DEBUG,format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
