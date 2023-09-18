@@ -5,7 +5,7 @@
     "repository": "https://github.com/RRomeo-RJ/Romeo-UserBot",
   "stack": "container",
     "env": {
-        "STRING_SESSION1": {
+        "STRING_SESSION": {
             "description": "fill with the telethon session string from @RJssgBot",
             "required": true
         },
@@ -26,12 +26,12 @@
         },
         "API_ID": {
             "description": "Fill there your API_ID",
-            "required": false,
+            "required": true,
             "value": "13335263"
         },
         "API_HASH": {
             "description": "Fill there your API_HASH",
-            "required": false,
+            "required": true,
             "value": "16743e0ded6547061df2f1087fe354df" 
         }
 
