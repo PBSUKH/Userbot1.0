@@ -33,13 +33,9 @@ MESSAGE = """
 𝐈'𝐦 𝐚 𝐑𝐨𝐦𝐞𝐨 
 𝐔𝐬𝐞𝐫𝐁𝐨𝐭 𝐀𝐬𝐬𝐢𝐬𝐭𝐚𝐧𝐭 𝐇𝐞𝐫𝐞.
 """
-
 #start
 @app.on_message(filters.command("start", ["/", ".", "!", "?"]) & filters.private)
-async def start(client, message):
-
- #  await message.reply_text("Hey RomeoBot Assistant here")
-
+async def start(client: Client, message: Message):
    buttons = [
             [
                 InlineKeyboardButton("• 𝐒𝐮𝐩𝐩𝐨𝐫𝐭 𝐆𝐫𝐨𝐮𝐩 •", url="t.me/RomeoBot_op"),
