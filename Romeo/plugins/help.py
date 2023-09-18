@@ -4,8 +4,11 @@ from pyrogram.types import Message
 from Romeo import SUDO_USER
 from config import *
 
+R = "ROMEOBOT COMMAND"
+
 @Client.on_message(filters.command(["help"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def help(client: Client, message: Message):
+    C = "https://telegra.ph//file/5467954d1156db5032062.jpg"
     CD = """
    ROMEOBOT HELP MENU
 ________________________________
@@ -53,4 +56,4 @@ ________________________________
 `.tm` - .tm (reply to any media) - to create teligraph link                
 """
     await message.delete()
-    await message.reply_photo(photo=ALIVE_PIC, caption=CD)
+    await message.reply_photo(photo=C, caption=R)
