@@ -2,33 +2,12 @@
     "name": "Romeo-Userbot",
     "description": "An first Telegram Userbot with multi Clients for Spamming or Mass.",
     "keywords": ["pyrogram", "userbot"],
-    "repository": "https://github.com/Romeo-RJ-143/cloner",
+    "repository": "https://github.com/RRomeo-RJ/Romeo-UserBot",
   "stack": "container",
     "env": {
         "STRING_SESSION1": {
             "description": "fill with the telethon session string from @RJssgBot",
             "required": true
-        },
-        "STRING_SESSION2": {
-            "description": "fill with the telethon session string from @RJssgBot",
-            "required": false
-        },
-        "STRING_SESSION3": {
-            "description": "fill with the telethon session string from @RJssgBot",
-            "required": false
-        },
-        "STRING_SESSION4": {
-            "description": "fill with the telethon session string from @RJssgBot",
-            "required": false
-        },
-        "STRING_SESSION5": {
-            "description": "fill with the telethon session string from @RJssgBot",
-            "required": false
-        },
-        "MONGO_URL": {
-            "description": "Fill there an mongo database from mongodb.com",
-            "required": true,
-            "value": ""
         },
         "SUDO_USERS": {
             "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
@@ -39,11 +18,6 @@
             "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
             "required": true,
             "value": "5368154755"
-        },
-        "LOG_GROUP": {
-            "description": "Fill there your group I'd go to create a group and add make an admin with @MissRose_bot to your group and type /id",
-            "required": false,
-            "value": ""
         },
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
