@@ -6,13 +6,9 @@ from pyrogram.types import Message
 from Romeo.helper.data import *
 from Romeo import SUDO_USER
 
-SUDO_USERS = SUDO_USER
 
-
-@Client.on_message(
-    filters.command(["hang"], ".") & (filters.me | filters.user(SUDO_USER))
-)
-async def pornspam(client: Client, message: Message): 
+@Client.on_message(filters.command(["hang"], ".") & (filters.me | filters.user(SUDO_USER)))
+async def hang(client: Client, message: Message): 
     counts = message.command[1]
     if not counts:
         return await message.reply_text(usage)
