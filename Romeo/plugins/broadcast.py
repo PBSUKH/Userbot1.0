@@ -13,10 +13,8 @@ def get_arg(message: Message):
         return ""
     return " ".join(split[1:])
 
-@Client.on_message(
-    filters.command(["gcast"], ".") & (filters.me | filters.user(SUDO_USER))
-)
-async def gcast_cmd(client: Client, message: Message):
+@Client.on_message(filters.command(["gcast"], ".") & (filters.me | filters.user(SUDO_USER)))
+async def gcast(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
         tex = await message.reply_text("`Started global broadcast...`")
     else:
@@ -41,14 +39,10 @@ async def gcast_cmd(client: Client, message: Message):
                 except Exception:
                     error += 1
                     await asyncio.sleep(0.3)
-    await tex.edit_text(
-        f"**Successfully Sent Message To** `{done}` **Groups, chat, Failed to Send Message To** `{error}` **Groups**"
-    )
+    await tex.edit_text(f"**Successfully Sent Message To** `{done}` **Groups, chat, Failed to Send Message To** `{error}` **Groups**")
 
 
-@Client.on_message(
-    filters.command(["gucast"], ".") & (filters.me | filters.user(SUDO_USER))
-)
+@Client.on_message(filters.command(["gucast"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def gucast(client: Client, message: Message):
     if message.reply_to_message or get_arg(message):
         tex = await message.reply_text("`Started global broadcast...`")
@@ -74,6 +68,4 @@ async def gucast(client: Client, message: Message):
                 except Exception:
                     error += 1
                     await asyncio.sleep(0.3)
-    await text.edit_text(
-        f"**Successfully Sent Message To** `{done}` **chat, Failed to Send Message To** `{error}` **chat**"
-    )
+    await text.edit_text(f"**Successfully Sent Message To** `{done}` **chat, Failed to Send Message To** `{error}` **chat**")
