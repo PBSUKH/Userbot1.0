@@ -124,9 +124,7 @@ itachiemoji = [
 ]
 
 
-@Client.on_message(
-    filters.command(["emoji", "ej"], ".") & (filters.me | filters.user(SUDO_USER))
-)
+@Client.on_message(filters.command(["emoji", "ej"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def emoji(client: Client, message: Message):
     op = await edit_or_reply(message, "`Emojifying the text..`")
     args = get_text(message)
@@ -147,12 +145,8 @@ async def emoji(client: Client, message: Message):
             result += a
     await op.edit(result)
     
-    
 
-
-@Client.on_message(
-    filters.command(["cmoji", "cj"], ".") & (filters.me | filters.user(SUDO_USER))
-)
+@Client.on_message(filters.command(["cmoji", "cj"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def cmoji(client: Client, message: Message):
     op = await edit_or_reply(message, "`Emojifying the text..`")
     args = get_text(message)
