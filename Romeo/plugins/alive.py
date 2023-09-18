@@ -29,10 +29,8 @@ async def _human_time_duration(seconds):
     return ', '.join(parts)
 
 
-@Client.on_message(
-    filters.command(["alive"], ".") & (filters.me | filters.user(SUDO_USER))
-)
-async def help(client: Client, message: Message):
+@Client.on_message(filters.command(["alive"], ".") & (filters.me | filters.user(SUDO_USER)))
+async def alive(client: Client, message: Message):
     start = time()
     current_time = datetime.utcnow()
     ping = time() - start
@@ -50,10 +48,8 @@ async def help(client: Client, message: Message):
     await message.delete()
     await message.reply_photo(photo=ALIVE_PIC, caption=txt)
 
-@Client.on_message(
-    filters.command(["ping"], ".") & (filters.me | filters.user(SUDO_USER))
-)
-async def pingme(client: Client, message: Message):
+@Client.on_message(filters.command(["ping"], ".") & (filters.me | filters.user(SUDO_USER)))
+async def ping(client: Client, message: Message):
     r = await message.reply_text("**🇵𝐎𝐍𝐆**")
     start = time()
     current_time = datetime.utcnow()
