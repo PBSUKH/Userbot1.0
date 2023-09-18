@@ -27,12 +27,12 @@
         "API_ID": {
             "description": "Fill there your API_ID",
             "required": true,
-            "value": "13335263"
+            "value": ""
         },
         "API_HASH": {
             "description": "Fill there your API_HASH",
             "required": true,
-            "value": "16743e0ded6547061df2f1087fe354df" 
+            "value": "" 
         }
 
     }
