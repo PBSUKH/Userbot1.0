@@ -29,4 +29,4 @@ if not BOT_TOKEN:
    
 if STRING_SESSION:
    print("[INFO] STRING_SESSION: Found.. Starting.. Client..")
-   client1 = Client(name="one", api_id=API_ID, api_hash=API_HASH, session_string=STRING_SESSION, plugins=dict(root="Romeo/plugins"))
+   client = Client(name="one", api_id=API_ID, api_hash=API_HASH, session_string=STRING_SESSION, plugins=dict(root="Romeo/plugins"))
