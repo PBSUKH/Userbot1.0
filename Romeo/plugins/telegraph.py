@@ -2,7 +2,7 @@ import os
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from telegraph import Telegraph, exceptions, upload_file
-
+from Romeo import SUDO_USER
 
 telegraph = Telegraph()
 r = telegraph.create_account(short_name="telegram")
@@ -21,7 +21,7 @@ def get_text(message: Message) -> [None, str]:
     else:
         return None
 
-@Client.on_message(filters.command(["tg", "telegraph", "tm", "tgt"], ".") & filters.me)
+@Client.on_message(filters.command(["tg", "telegraph", "tm", "tgt"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def uptotelegraph(client: Client, message: Message):
     tex = await message.edit_text("`Processing . . .`")
     if not message.reply_to_message:
