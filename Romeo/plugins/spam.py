@@ -37,10 +37,7 @@ async def extract_args(message, markdown=True):
     text = text[text.find(" ") :].strip()
     return text
 
-@Client.on_message(
-    filters.command(["dspam", "delayspam", "ds"], ".") & (filters.me | filters.user(SUDO_USER))
-)
-
+@Client.on_message(filters.command(["dspam", "delayspam", "ds"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def delayspam(client: Client, message: Message):
     if message.chat.id in BLACKLIST_CHAT:
         return await message.reply_text(
@@ -74,9 +71,7 @@ async def delayspam(client: Client, message: Message):
     )
 
 
-@Client.on_message(
-    filters.command(commands, ".") & (filters.me | filters.user(SUDO_USER))
-)
+@Client.on_message(filters.command(commands, ".") & (filters.me | filters.user(SUDO_USER)))
 async def sspam(client: Client, message: Message):
     if message.chat.id in BLACKLIST_CHAT:
         return await message.reply_text(
@@ -102,9 +97,7 @@ async def sspam(client: Client, message: Message):
         await asyncio.sleep(cooldown[message.command[0]])
 
 
-@Client.on_message(
-    filters.command(["sspam", "stkspam", "spamstk", "stickerspam"], ".") & (filters.me | filters.user(SUDO_USER))
-)
+@Client.on_message(filters.command(["sspam", "stkspam", "spamstk", "stickerspam"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def spam_stick(client: Client, message: Message):
     if message.chat.id in BLACKLIST_CHAT:
         return await message.reply_text(
