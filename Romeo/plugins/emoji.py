@@ -4,7 +4,7 @@ from Romeo import SUDO_USER
 from Romeo.helper.basic import edit_or_reply, get_text
 
 
-kakashitext = [
+rtext = [
     "a",
     "b",
     "c",
@@ -44,7 +44,7 @@ kakashitext = [
 ]
 
 
-kakashiemoji = [
+remoji = [
     "⁭\n                    💖\n                  💖💖\n               💖💖💖\n            💖💖 💖💖\n          💖💖    💖💖\n        💖💖       💖💖\n      💖💖💖💖💖💖\n     💖💖💖💖💖💖💖\n   💖💖                 💖💖\n  💖💖                    💖💖\n💖💖                       💖💖\n",
     "⁭\n💗💗💗💗💗💗💗\n💗💗💗💗💗💗💗💗\n💗💗                     💗💗\n💗💗                     💗💗\n💗💗💗💗💗💗💗💗\n💗💗💗💗💗💗💗💗\n💗💗                     💗💗\n💗💗                     💗💗\n💗💗💗💗💗💗💗💗\n💗💗💗💗💗💗💗\n",
     "⁭\n          💛💛💛💛💛💛\n     💛💛💛💛💛💛💛💛\n   💛💛                      💛💛\n 💛💛\n💛💛\n💛💛\n 💛💛\n   💛💛                      💛💛\n     💛💛💛💛💛💛💛💛\n         💛💛💛💛💛💛\n",
@@ -84,7 +84,7 @@ kakashiemoji = [
 ]
 
 
-itachiemoji = [
+rtemoji = [
     "⁭\n                    {cj}\n                  {cj}{cj}\n               {cj}{cj}{cj}\n            {cj}{cj} {cj}{cj}\n          {cj}{cj}    {cj}{cj}\n        {cj}{cj}       {cj}{cj}\n      {cj}{cj}{cj}{cj}{cj}{cj}\n     {cj}{cj}{cj}{cj}{cj}{cj}{cj}\n   {cj}{cj}                 {cj}{cj}\n  {cj}{cj}                    {cj}{cj}\n{cj}{cj}                       {cj}{cj}\n",
     "⁭\n{cj}{cj}{cj}{cj}{cj}{cj}{cj}\n{cj}{cj}{cj}{cj}{cj}{cj}{cj}{cj}\n{cj}{cj}                     {cj}{cj}\n{cj}{cj}                     {cj}{cj}\n{cj}{cj}{cj}{cj}{cj}{cj}{cj}{cj}\n{cj}{cj}{cj}{cj}{cj}{cj}{cj}{cj}\n{cj}{cj}                     {cj}{cj}\n{cj}{cj}                     {cj}{cj}\n{cj}{cj}{cj}{cj}{cj}{cj}{cj}{cj}\n{cj}{cj}{cj}{cj}{cj}{cj}{cj}\n",
     "⁭\n          {cj}{cj}{cj}{cj}{cj}{cj}\n     {cj}{cj}{cj}{cj}{cj}{cj}{cj}{cj}\n   {cj}{cj}                      {cj}{cj}\n {cj}{cj}\n{cj}{cj}\n{cj}{cj}\n {cj}{cj}\n   {cj}{cj}                      {cj}{cj}\n     {cj}{cj}{cj}{cj}{cj}{cj}{cj}{cj}\n         {cj}{cj}{cj}{cj}{cj}{cj}\n",
@@ -138,8 +138,8 @@ async def emoji(client: Client, message: Message):
     result = ""
     for a in args:
         a = a.lower()
-        if a in kakashitext:
-            char = kakashiemoji[kakashitext.index(a)]
+        if a in rtext:
+            char = remoji[rtext.index(a)]
             result += char
         else:
             result += a
@@ -164,9 +164,10 @@ async def cmoji(client: Client, message: Message):
     result = ""
     for a in arg:
         a = a.lower()
-        if a in kakashitext:
-            char = itachiemoji[kakashitext.index(a)].format(cj=emoji)
+        if a in rtext:
+            char = rtemoji[rtext.index(a)].format(cj=emoji)
             result += char
         else:
             result += a
     await op.edit(result)
+    
