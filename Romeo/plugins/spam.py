@@ -3,16 +3,13 @@ from re import sub
 from threading import Event
 from pyrogram import Client, enums, filters
 from pyrogram.types import Message
+from Romeo.helper.data import GROUP
 
 from config import *
 from Romeo import SUDO_USER 
 
 commands = ["spam", "statspam", "slowspam", "fastspam"]
 SPAM_COUNT = [0]
-
-BLACKLIST_CHAT = []
-BLACKLIST_CHAT.append(-1001625889213)
-
 
 
 def increment_spam_count():
@@ -21,7 +18,7 @@ def increment_spam_count():
 
 
 def spam_allowed():
-    return SPAM_COUNT[0] < 9999999
+    return SPAM_COUNT[0] < 4999
 
 async def extract_args(message, markdown=True):
     if not (message.text or message.caption):
@@ -39,7 +36,7 @@ async def extract_args(message, markdown=True):
 
 @Client.on_message(filters.command(["dspam", "delayspam", "ds"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def delayspam(client: Client, message: Message):
-    if message.chat.id in BLACKLIST_CHAT:
+    if message.chat.id in GROUP:
         return await message.reply_text(
             "**This command is not allowed to be used in this group**"
         )
@@ -70,14 +67,14 @@ async def delayspam(client: Client, message: Message):
 
 @Client.on_message(filters.command(commands, ".") & (filters.me | filters.user(SUDO_USER)))
 async def sspam(client: Client, message: Message):
-    if message.chat.id in BLACKLIST_CHAT:
+    if message.chat.id in GROUP:
         return await message.reply_text(
             "**This command is not allowed to be used in this group**"
         )
     amount = int(message.command[1])
     text = " ".join(message.command[2:])
 
-    cooldown = {"spam": 0.15, "statspam": 0.1, "slowspam": 0.9, "fastspam": 0}
+    cooldown = {"spam": 0.1, "statspam": 0.1, "slowspam": 0.9, "fastspam": 0}
 
     await message.delete()
 
@@ -96,7 +93,7 @@ async def sspam(client: Client, message: Message):
 
 @Client.on_message(filters.command(["sspam", "stkspam", "spamstk", "stickerspam"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def spam_stick(client: Client, message: Message):
-    if message.chat.id in BLACKLIST_CHAT:
+    if message.chat.id in GROUP:
         return await message.reply_text(
             "**This command is not allowed to be used in this group**"
         )
