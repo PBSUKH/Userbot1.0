@@ -69,7 +69,6 @@ async def watch_raids(client: Client, message: Message):
             return
         if int(message.chat.id) in GROUP:
             return
-
         try:
             if not message.from_user.id in ACTIVATE_RLIST:
                 return
