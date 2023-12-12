@@ -8,7 +8,7 @@ R = "ROMEOBOT COMMAND"
 
 @Client.on_message(filters.command(["help"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def help(client: Client, message: Message):
-    C = "https://telegra.ph//file/5467954d1156db5032062.jpg"
+    C = ""
     CD = """
    ROMEOBOT HELP MENU
 ________________________________
