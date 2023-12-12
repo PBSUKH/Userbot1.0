@@ -62,4 +62,5 @@ async def ping(client: Client, message: Message):
         f"🇵𝐈𝐍𝐆 ❥︎ {ping * 1000:.3f}ᴍs\n"
         f"🇺𝐏★🇹𝐈𝐌𝐄 ❥︎ {uptime}\n"
         f"🇴𝐖𝐍𝐄𝐑 ❥︎ {client.me.mention}"
+        f"🇺𝐒𝐓𝐀𝐃★🇯𝐈 {@II_BAD_MUNDA_II}"
     )
