@@ -20,3 +20,7 @@
 <p align="center"><a href="http://dashboard.heroku.com/new?template=https://github.com/badmunda98/BadXuserbot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="210" height="40"/></a></p>
 
 -------------------------
+
+━━━━━━━━━━━━━━━━━━━━
+### ㅤㅤㅤㅤ𝖲𝖳𝖱𝖨𝖭𝖦 𝖡𝖮𝖳 
+ [ ʙᴏᴛ ](https://t.me/BAD_STRING_SESSION_BOT)
