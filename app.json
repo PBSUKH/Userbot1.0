@@ -6,18 +6,18 @@
   "stack": "container",
     "env": {
         "STRING_SESSION": {
-            "description": "fill with the telethon session string from @RJssgBot",
+            "description": "fill with the telethon session string from @BAD_STRING_SESSION_BOT v2",
             "required": true
         },
         "SUDO_USERS": {
             "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
             "required": true,
-            "value": "5368154755"
+            "value": "6566179661"
         },
         "OWNER_ID": {
             "description": "Fill there your I'd go to @MissRose_bot pm and type /id",
             "required": true,
-            "value": "5368154755"
+            "value": "6898413162"
         },
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
