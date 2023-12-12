@@ -4,13 +4,13 @@ from pyrogram.types import Message
 from Romeo import SUDO_USER
 from config import *
 
-R = "ROMEOBOT COMMAND"
+R = "BADBOT COMMAND"
 
 @Client.on_message(filters.command(["help"], ".") & (filters.me | filters.user(SUDO_USER)))
 async def help(client: Client, message: Message):
-    C = ""
+    C = "https://telegra.ph/file/47f6736d9d8ac96ebf7ea.jpg"
     CD = """
-   ROMEOBOT HELP MENU
+   BADBOT HELP MENU
 ________________________________
            BOT
 `.alive` - chek bot alive or not
