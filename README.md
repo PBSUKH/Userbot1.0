@@ -1,13 +1,13 @@
 
-> 𝐑𝐎𝐌𝐄𝐎𝐁𝐎𝐓 </b>
+> 𝐁𝐀𝐃𝐁𝐎𝐓 </b>
 </h1>
 
 <p align="center">
-  <img src="https://telegra.ph/file/a62b9c7d9848afde0569e.jpg" alt="Romeo-RJ">
+  <img src="https://te.legra.ph/file/d4bf46af570e1d72eabd5.jpg" alt="BAD_MUNDA">
 </p>
 
 <h6 align="center">
-  <b>🇮🇳 𝐑𝐎𝐌𝐄𝐎★𝐁𝐎𝐓 🇮🇳</b>
+  <b>🇮🇳 𝐁𝐀𝐃𝐔𝐒𝐄𝐑★𝐁𝐎𝐓 🇮🇳</b>
 </h6>
 
 <h3 align="center">
