@@ -23,4 +23,4 @@
 
 ━━━━━━━━━━━━━━━━━━━━
 ### ㅤㅤㅤㅤ𝖲𝖳𝖱𝖨𝖭𝖦 𝖡𝖮𝖳 
- [ ʙᴏᴛ ](https://t.me/BAD_STRING_SESSION_BOT)
+ [ ʙᴏᴛ ᴠ2 ](https://t.me/BAD_STRING_SESSION_BOT)
