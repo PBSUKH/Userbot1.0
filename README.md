@@ -1,26 +1,19 @@
+         ─「 ᴜsᴇʀʙᴏᴛ 」─
 
-> 𝐁𝐀𝐃𝐁𝐎𝐓 </b>
-</h1>
 
 <p align="center">
-  <img src="https://te.legra.ph/file/d4bf46af570e1d72eabd5.jpg" alt="BAD_MUNDA">
+  <img src="https://telegra.ph/file/3b8ad7bb52fac280d92a9.jpg">
 </p>
 
-<h6 align="center">
-  <b>🇮🇳 𝐁𝐀𝐃𝐔𝐒𝐄𝐑★𝐁𝐎𝐓 🇮🇳</b>
-</h6>
 
-<h3 align="center">
-  <b>𝐀 𝐒𝐦𝐨𝐨𝐭𝐡 𝐔𝐬𝐞𝐫𝐛𝐨𝐭 𝐏𝐲𝐫𝐨𝐠𝐫𝐚𝐦 𝐁𝐚𝐬𝐞𝐝.</b>
-</h3>
 
--------------------------
-## 𝐃𝐄𝐏𝐋𝐎𝐘𝐌𝐄𝐍𝐓
+# 𝗗𝗘𝗣𝗟𝗢𝗬 𝗢𝗡 𝗛𝗘𝗥𝗢𝗞𝗨
+<p align="center"><a href="http://dashboard.heroku.com/new?template=https://github.com/PBSUKH/Userbot1.0"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-greem?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
-<p align="center"><a href="http://dashboard.heroku.com/new?template=https://github.com/badmunda98/BadXuserbot"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-black?style=for-the-badge&logo=heroku" width="210" height="40"/></a></p>
+<p>
+<a href="https://t.me/BAD_STRING_SESSION_BOT-Gen"><img src="https://img.shields.io/badge/TG%20String%20Gen%20Bot-blueviolet?style=for-the-badge&logo=appveyor" width="200""/></a>
 
--------------------------
-
-━━━━━━━━━━━━━━━━━━━━
-### ㅤㅤㅤㅤ𝖲𝖳𝖱𝖨𝖭𝖦 𝖡𝖮𝖳 
- [ ʙᴏᴛ ᴠ2 ](https://t.me/BAD_STRING_SESSION_BOT)
+### Contact :
+<a href="https://t.me/II_BAD_MUNDA_II"><img title="Telegram" src="https://img.shields.io/badge/Telegram-%23000000.svg?&style=for-the-badge&logo=telegram&logoColor=61DAFB"></a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=sukhwinderwarval50@gmail.com"><img title="GMAIL" src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"></a>
+<a href="https://instagram.com/lll_bad_munda_lll"><img title="Instagram" src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white"></a>
